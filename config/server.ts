@@ -9,5 +9,5 @@ export default ({ env }) => ({
   webhooks: {
     populateRelations: env.bool('WEBHOOKS_POPULATE_RELATIONS', false),
   },
-  url: env('PUBLIC_URL', `http://${env('HOST', '0.0.0.0')}:${env.int('PORT', 1337)}`),
+  url: env('PUBLIC_URL', `https://${env('HOST', 'strapi-production-a6a4.up.railway.app')}`),
 });
